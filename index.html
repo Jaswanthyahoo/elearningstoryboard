@@ -15,7 +15,7 @@
     <!-- meta character set -->
     <meta charset="utf-8">
     <!-- Site Title -->
-    <title>eLearning portal</title>
+    <title>::ARTEM::</title>
 
     <!--
     Google Fonts
@@ -65,7 +65,7 @@
                 <h1 class="navbar-brand">
                     <a href="#body">
                         <!--<img src="img/logo1.png" alt="Kasper Logo">-->
-                        <h4>elearning</h4>
+                        ARTEM
                     </a>
                 </h1>
                 <!-- /logo -->
@@ -78,6 +78,7 @@
                     <li><a href="#signup-login">Sign-Up / Sign-In</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#allCourses">Courses</a></li>
+                    <li><a href="#subscribe">FQA's</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -102,27 +103,27 @@
                 <div class="item active" style="background-image: url('img/slider/bnr1.png')">
                     <div class="carousel-caption">
                         <div class="animated bounceInRight">
-                            <h2>eLearning Portal <br>What we do.....</h2>
-                            <p>you’ll learn how to perform engineering simulations using a powerful tool ANSYS, Inc.</p>
+                            <h2>ARTEM</h2>
+                            <p>“Differential equations define nature, our job is to recognize and replicate their awesomeness into our design”</p>
                         </div>
                     </div>
                 </div>
                 <div class="item" style="background-image: url('img/slider/bnr2.png')">
                     <div class="carousel-caption">
                         <div class="animated bounceInDown">
-                            <h2>eLearning Portal <br>What we do.....</h2>
-                            <p>you’ll learn how to perform engineering simulations using a powerful tool ANSYS, Inc.</p>
+                            <h2>ARTEM</h2>
+                            <p>We pat the curious mind and smack the sleepy head until they create something breathtaking. Welcome to Artem Academy, gateway to the astounding side of Computer Aided Engineering (CAE).</p>
                         </div>
                     </div>
                 </div>
-                <div class="item" style="background-image: url('img/slider/bnr3.png')">
+                <!--<div class="item" style="background-image: url('img/slider/bnr3.png')">
                     <div class="carousel-caption">
                         <div class="animated bounceInUp">
                             <h2>eLearning Portal <br>What we do.....</h2>
                             <p>you’ll learn how to perform engineering simulations using a powerful tool ANSYS, Inc.</p>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
             <!--/.carousel-inner-->
             <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
@@ -147,7 +148,6 @@
                 <div class="col-md-12">
                     <div class="section-title text-center wow fadeInDown">
                         <h2>Services</h2>
-                        <!--<p>Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. </p>-->
                     </div>
                 </div>
             </div>
@@ -158,8 +158,9 @@
                             <img src="img/icons/monitor.png" class="media-object" alt="Monitor">
                         </a>
                         <div class="media-body">
-                            <h3>Service 1</h3>
-                            <p>Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services.</p>
+                            <h3 data-toggle="modal" data-target="#workshopTrainingModal" class="cursor-pointer">Workshop Training</h3>
+                            <p>FEA is a powerful tool – it is used practically in research as well as various engineering applications today.  A saying that is quite common in the industry is “garbage in, garbage out.”</p>
+
                         </div>
                     </div>
                 </div>
@@ -169,8 +170,8 @@
                             <img src="img/icons/cog.png" alt="Cog">
                         </a>
                         <div class="media-body">
-                            <h3>Service 2</h3>
-                            <p>Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services.</p>
+                            <h3 data-toggle="modal" data-target="#facultyTrainingModal" class="cursor-pointer">Faculty Training</h3>
+                            <p>The fact that a teacher is also a learner and must be understood in its right perspective. "When one teaches, two learn." This is the spirit behind learning to teach.</p>
                         </div>
                     </div>
 
@@ -181,7 +182,7 @@
                             <img src="img/icons/ruler.png" alt="Ruler">
                         </a>
                         <div class="media-body">
-                            <h3>Service 3</h3>
+                            <h3 data-toggle="modal" data-target="#onlineTrainingModal" class="cursor-pointer">Online Training</h3>
                             <p>Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services.</p>
                         </div>
                     </div>
@@ -192,11 +193,126 @@
                             <img src="img/icons/camera.png" alt="Camera">
                         </a>
                         <div class="media-body">
-                            <h3>Service 4</h3>
+                            <h3 data-toggle="modal" data-target="#classRoomTrainingModal" class="cursor-pointer">Classroom Training</h3>
                             <p>Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services. Services.</p>
                         </div>
                     </div>
                 </div>
+
+                <!--start Modals-->
+                <div class="modal fade" id="workshopTrainingModal" tabindex="-1" role="dialog" aria-labelledby="workshopTrainingModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="workshopTrainingLabel">Workshop Training</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                FEA is a powerful tool – it is used practically in research as well as various engineering applications today – but it must be treated with care and understanding because it is also very easy to get incorrect answers.  A saying that is quite common in the industry is “garbage in, garbage out.”
+                                FEA will not tell you if you have set up your analysis incorrectly.  This means that, even if you understand all of the math and physics at work, simple mistakes in the initial conditions can yield good looking results that are completely wrong.  For this reason expert users of FEA will always have a good estimate of the results before they begin.  This “sanity check” allows them to ensure that the FEA results are on target.
+                                ARTEM workshops are aimed at discussing the theory behind the finite element software’s along with the usage & importance of the tool, unlike the usual seminars/workshops. We are confident the academia/industry will immensely benefit from this unique course.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="facultyTrainingModal" tabindex="-1" role="dialog" aria-labelledby="facultyTrainingModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="facultyTrainingModalLabel">Faculty Training</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                The fact that a teacher is also a learner and must be understood in its right perspective. "When one teaches, two learn." This is the spirit behind learning to teach.
+                                Here we provide advanced tailor made training programs for faculties on varied and specialized requirements to emphasize their skills resulting in better coaching for students. ARTEM is assisted by a set of academic and industry experienced faculties who are capable of conducting the training programs without diluting the standards of the powerful CAE tool along with the academic FEA knowledge.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="onlineTrainingModal" tabindex="-1" role="dialog" aria-labelledby="onlineTrainingModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="onlineTrainingModalLabel">Online Training</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                The online training course is designed for all students or enthusiasts of world, who are interested in exploring the field of FAE conveniently from their preferred location and time.
+                                In this hands-on course, you’ll learn how to perform engineering simulations using a powerful tool ANSYS, Inc. This is a problem-based course where you’ll learn by doing. The focus will be on understanding what’s under the blackbox so as to move beyond garbage-in, garbage-out. We will practice theoretical (text book) problems and apply the principles to the real-world problems involving different physics.
+                                This course teaches fundamental concepts and tool use in an integrated fashion using the power of online learning. All student learners will have access to a free download of ANSYS Student license tool.
+                                Join us to discover why simulations have changed, how engineering is done and how you can be a part of this revolution.
+
+                                Why Online Education?
+                                •	It has taken away the geographical and financial barriers for receiving quality education.
+                                •	Provides professionals with the flexibility to improve and update their skill set while working simultaneously
+                                •	Facilitates students as well as teachers from anywhere in the world to receive trainings from the  instructors
+                                •	Online training equates to decreased travel expenses. Since there’s no longer a need for student to travel to a training site.
+
+                                The quality of education and the overall learning experience will see tremendous improvement with online training as well.
+
+                                Courses offered:
+                                Sl.No.	Course Name	Pre-requisite	Stream	Course Duration
+                                1	FEA using ANSYS Classic ( ANSYS APDL Mechanical)	Basic FEA Theory	Mechanical  & Civil Engineering	70 hrs
+                                2	FEA using ANSYS Workbench (Design Modular & Mechanical)	Basic FEA Theory	Mechanical  & Civil Engineering	60 hrs
+                                4	Advanced FEA using ANSYS Classic	Basic FEA Theory & Solid Mechanics with basic tool knowledge	Mechanical Engg/
+                                Civil Engg	70 hrs
+                                5	Advanced FEA using ANSYS Workbench (Design Modular & Mechanical)	Basic FEA Theory & Solid Mechanics with basic tool knowledge	Mechanical  & Civil Engineering	70 hrs
+                                6	Exclusive APDL macros both for ANSYS Classic & Workbench	Basic FEA Theory 	Mechanical  & Civil Engineering	30 hrs
+                                
+                                Demo & Fee details for online course will be sent to personal email ID on the request
+
+                                Documents Required:
+                                Scanned copies of ID & Address proof along with education details to register for online courses.
+
+
+                                Please feel free to contact us for further details in our artem.co.in or through official email ID.
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="classRoomTrainingModal" tabindex="-1" role="dialog" aria-labelledby="classRoomTrainingModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="classRoomTrainingModalLabel">ClassRoom Training</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Need Content
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end Modals-->
+
             </div> <!-- end .row -->
         </div> <!-- end .container -->
     </section>
@@ -325,22 +441,70 @@
                 <div class="section-title text-center wow fadeInUp">
                     <h2>About Us</h2>
                 </div>
-
                 <div class="col-md-12 wow fadeInLeft">
-
-                    <div id="testimonial">
-                        <div class="tst-item clearfix">
-                            <div class="tst-single clearfix">
-                                <div class="tst-content">
-                                    <p>We train sucessfully. We train sucessfully. We train sucessfully. We train sucessfully. We train sucessfully. We train sucessfully. We train sucessfully. We train sucessfully. We train sucessfully. We train sucessfully. We train sucessfully. We train sucessfully. </p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div> <!-- end #testimonial -->
+                    <h4>The Artem Story :</h4>
+                </div>
+                <div class="col-md-12 wow fadeInLeft">
+                    <div class="abouttst-content">
+                        <p>Hi! ARTEM was established with a passion for engineering by IITians & MBA’s. Engineers love sensible designs and enjoy perfecting them. ARTEM truly believe that knowledge is best shared and so we are excited to share our technical as well as industry expertise in using CAE various powerful tools. </p>
+                    </div>
                 </div>
             </div>
+
+            <!--<div class="row">
+
+                <div class="col-md-12 wow fadeInLeft">
+                    <h4>What is CAE?</h4>
+                </div>
+                <div class="col-md-12 wow fadeInLeft">
+                    <div class="abouttst-content">
+                        <p>Basically, CAE is a method used by engineers to understand how elements in a product would react to different forces being exerted on them. Today, designs are far more complex for an engineer to apply traditional mathematical equations. For instance, how would a building react to different forces being exerted by wind on it, how would parts in an engine behave- will different shapes or thickness have any difference? To solve these, it requires a methodology, i.e., geometric model to replicate the prototype and analyzed with Finite analysis method with the computer Tools. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-12 wow fadeInLeft">
+                    <h4>Why should I do it from Artem Academy?</h4>
+                </div>
+                <div class="col-md-12 wow fadeInLeft">
+                    <div class="abouttst-content">
+                        <p>We come from an industry where we spent years in research & analysis in computer aided engineering. So we know the importance of practical approach to a problem along with the theoretical knowledge. Our experts are recognized industry-wide and are respected for their work, which includes PATENT (for ANSYS Process Improvement), National & International conferences, Paper Publications, Cost Reduction programs and so on.  Also toying with new engineering ideas has earned us wide acclamation for our ingenuity. So trust us, we love the practical approach just as much as you do. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-12 wow fadeInLeft">
+                    <h4>What will I get out of it?</h4>
+                </div>
+                <div class="col-md-12 wow fadeInLeft">
+                    <div class="abouttst-content">
+                        <p>By the end of the course, you will be industry ready and will be able to:</p>
+                        <ul class="list-unstyled">
+                            <li class="fa-check">Select preferable approach to model using modeling software.</li>
+                            <li class="fa-check">Accurately produce results by avoiding errors and pitfalls in FEA.</li>
+                            <li class="fa-check">Analyze FEA reports for errors which are inherent to its results.</li>
+                            <li class="fa-check">Efficiently use the tool to produce desirable designs on demand.</li>
+                            <li class="fa-check">Provide effective FEA project management by ensuring quality and cost-effectiveness of FEA projects.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-12 wow fadeInLeft">
+                    <h4>Will I get a certificate at the end of the course? What will it say?</h4>
+                </div>
+                <div class="col-md-12 wow fadeInLeft">
+                    <div class="abouttst-content">
+                        <p>Yes, upon completion of the course, ARTEM ACADEMY will provide you a CERTIFICATE in ‘…….’ Certifying on the successful completion of course.</p>
+                    </div>
+                </div>
+            </div>-->
         </div>
     </section>
     <!--
@@ -377,19 +541,81 @@
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
                     <div class="pricing-table text-center">
                         <div class="price">
-                            <span class="plan">Course 1</span>
-                            <span class="value"><strong>1000/-</strong>/MO</span>
+                            <span class="plan">Finite Element Methods</span>
+                            <span class="value">Mechanical  & Civil Engineering</span><br />
+                            <span class="value">Duration: 50 hrs</span>
                         </div>
-                        <ul class="text-center">
-                            <li>Content N0 1</li>
-                            <li>Content N0 2</li>
-                            <li>Content N0 3</li>
-                            <li>Content N0 4</li>
-                        </ul>
-                        <a href="#" class="btn btn-price">Buy Now</a>
+                        <a href="#" class="btn btn-price">Contact</a>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">Solid Mechanics</span>
+                            <span class="value">Mechanical  Engineering</span><br />
+                            <span class="value">Duration: 40 hrs</span>
+                        </div>
+                        <a href="#" class="btn btn-price">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">Machine Desining</span>
+                            <span class="value">Mechanical  Engineering</span><br />
+                            <span class="value">Duration: 40 hrs</span>
+                        </div>
+                        <a href="#" class="btn btn-price">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">Strength of Materials</span>
+                            <span class="value">Civil  Engineering</span><br />
+                            <span class="value">Duration: 40 hrs</span>
+                        </div>
+                        <a href="#" class="btn btn-price">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">Advanced Strength of Materials</span>
+                            <span class="value">Civil  Engineering</span><br />
+                            <span class="value">Duration: 40 hrs</span>
+                        </div>
+                        <a href="#" class="btn btn-price">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">Mechanics & FEA as required for tool</span>
+                            <span class="value">Mechanical  & Civil Engineering</span><br />
+                            <span class="value">Duration: 40 hrs</span>
+                        </div>
+                        <a href="#" class="btn btn-price">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">Course Catalog</span>
+                            <!--<span class="value">Click here to view full catalog</span>-->
+                        </div>
+                        <a href="#" class="btn btn-price">Click here</a>
+                    </div>
+                </div>
+
+
+                <!--<div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="pricing-table text-center">
                         <div class="price">
                             <span class="plan">Course 2</span>
@@ -433,7 +659,7 @@
                         </ul>
                         <a href="#" class="btn btn-price">Buy Now</a>
                     </div>
-                </div>
+                </div>-->
             </div>
             <!--<div class="row">
                 <div class="col-md-12 wow fadeInUp">
@@ -451,22 +677,82 @@
     <!--
     #subscribe
     ========================== -->
-    <!--<section id="subscribe">
+    <section id="subscribe">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 wow fadeInLeft">
-                    <form action="#" method="post" class="subscription-form">
-                        <i class="fa fa-envelope-o fa-lg"></i>
-                        <input type="email" name="subscribe" class="subscribe" placeholder="YOUR MAIL" required="">
-                        <input type="submit" value="SUBSCRIBE" id="mail-submit">
-                    </form>
+                <div class="section-title text-center wow fadeInUp">
+                    <h2>FAQ's</h2>
                 </div>
-                <div class="col-md-4 text-left wow fadeInRight">
-                    <p>We are concern about security.</p>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is CAE?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                Basically, CAE is a method used by engineers to understand how elements in a product would react to different forces being exerted on them. Today, designs are far more complex for an engineer to apply traditional mathematical equations. For instance, how would a building react to different forces being exerted by wind on it, how would parts in an engine behave- will different shapes or thickness have any difference? To solve these, it requires a methodology, i.e., geometric model to replicate the prototype and analyzed with Finite analysis method with the computer Tools.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Why should I do it from Artem Academy?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                We come from an industry where we spent years in research & analysis in computer aided engineering. So we
+                                know the importance of practical approach to a problem along with the theoretical knowledge. Our experts are recognized industry-wide and are respected for their work, which includes PATENT (for ANSYS Process Improvement), National & International conferences, Paper Publications, Cost Reduction programs and so on.  Also toying with new engineering ideas has earned us wide acclamation for our ingenuity. So trust us, we love the practical approach just as much as you do.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What will I get out of it?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                By the end of the course, you will be industry ready and will be able to:
+                                <ul class="list-unstyled">
+                                    <li class="fa-check">Select preferable approach to model using modeling software.</li>
+                                    <li class="fa-check">Accurately produce results by avoiding errors and pitfalls in FEA.</li>
+                                    <li class="fa-check">Analyze FEA reports for errors which are inherent to its results.</li>
+                                    <li class="fa-check">Efficiently use the tool to produce desirable designs on demand.</li>
+                                    <li class="fa-check">Provide effective FEA project management by ensuring quality and cost-effectiveness of FEA projects.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Will I get a certificate at the end of the course? What will it say?
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                Yes, upon completion of the course,
+                                ARTEM ACADEMY will provide you a CERTIFICATE in ‘…….’ Certifying on the successful completion of course.
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
     <!--
     End #subscribe
     ========================== -->
