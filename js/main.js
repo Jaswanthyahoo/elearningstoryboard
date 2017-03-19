@@ -11,15 +11,17 @@ $(function(){
     /*  Menu item highlighting
     /* ========================================================================= */
 
-    jQuery(window).scroll(function () {
-        if (jQuery(window).scrollTop() > 400) {
-            jQuery("#navigation").css("background-color","#00C7FC");
-            jQuery("#navigation").addClass("animated-nav");
-        } else {
-            jQuery("#navigation").css("background-color","transparent");
-            jQuery("#navigation").removeClass("animated-nav");
-        }
-    });
+    //jQuery(window).scroll(function () {
+        jQuery("#navigation").css("background-color", "#00C7FC");
+        jQuery("#navigation").addClass("animated-nav");
+        //if (jQuery(window).scrollTop() > 400) {
+        //    jQuery("#navigation").css("background-color","#00C7FC");
+        //    jQuery("#navigation").addClass("animated-nav");
+        //} else {
+        //    jQuery("#navigation").css("background-color","red");
+        //    jQuery("#navigation").removeClass("animated-nav");
+        //}
+    //});
 
     $('#nav').onePageNav({
         filter: ':not(.external)',
