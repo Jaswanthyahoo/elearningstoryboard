@@ -621,13 +621,14 @@ figcaption.mask span {
 
 .tst-content {
   border-bottom: 1px solid #a9a9a9;
-  margin: 10px 0 0 160px;
+  margin: 10px 0 0 50px;
   padding-bottom: 25px;
 }
 
 .tst-content p {
   color: #1f2021;
   line-height: 25px;
+  font-weight:bold;
 }
 
 .tst-content span {
