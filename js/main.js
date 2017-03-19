@@ -123,6 +123,8 @@ function progress(percent, $element) {
 
 searchQuestionsResults = {
     searchResults: function () {
+        $('#divPostAnswer,#btnPostAnswer').addClass('clshidden');
+        $('#alertPostAnswer').removeClass('clshidden').addClass('clsshow');
         $('#showSearchResults').removeClass('clshidden').addClass('clsshow');
     },
     submitAnswer: function () {
