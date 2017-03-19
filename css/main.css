@@ -988,3 +988,16 @@ figcaption.mask span {
 .copyright p:first-child {
     margin-bottom: 15px;
 }
+
+
+.marginbottom10{
+    margin-bottom:10px !important;
+}
+
+.clshidden{
+    display:none;
+}
+
+.clsshow {
+    display:block;
+}

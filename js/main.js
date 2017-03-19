@@ -120,3 +120,13 @@ function progress(percent, $element) {
         }, 10)
     })(0,percent);  
 }   
+
+searchQuestionsResults = {
+    searchResults: function () {
+        $('#showSearchResults').removeClass('clshidden').addClass('clsshow');
+    },
+    submitAnswer: function () {
+        $('#divPostAnswer,#btnPostAnswer').addClass('clshidden');
+        $('#alertPostAnswer').removeClass('clshidden').addClass('clsshow');
+    }
+}
