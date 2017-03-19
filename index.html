@@ -37,28 +37,14 @@
     <link rel="stylesheet" href="css/animate.css">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/lightbox/ekko-lightbox.min.css">
     <!-- Main Responsive -->
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="lightbox-master\dist\ekko-lightbox.min.css">
-    <link rel="stylesheet" href="lightbox-master\ekko-lightbox.less">
+    <!--<link rel="stylesheet" href="lightbox-master\dist\ekko-lightbox.min.css">
+    <link rel="stylesheet" href="lightbox-master\ekko-lightbox.less">-->
     <!-- Modernizer Script for old Browsers -->
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="lightbox-master\dist\ekko-lightbox.min.js"></script>
-
-
-    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>-->
-    <script type="text/javascript">
-        $('#open-youtube').click(function (e) {
-            e.preventDefault();
-            $(this).ekkoLightbox();
-        });
-        $('#open-image').click(function (e) {
-            e.preventDefault();
-            $(this).ekkoLightbox();
-        });
-    </script>
-
-
 </head>
 
 <body>
@@ -493,7 +479,7 @@
     ========================== -->
     <section id="about">
         <div class="container">
-            <div class="row">
+            <div class="row marginbottom10">
                 <div class="section-title text-center wow fadeInUp">
                     <h2>About Us</h2>
                 </div>
@@ -508,8 +494,7 @@
                             ARTEM truly believe that knowledge is best shared and so we are excited to share our technical as well as industry expertise in using CAE various powerful tools.
                         </p>
 
-
-                        <p><a href="http://player.vimeo.com/video/80629469" data-toggle="lightbox" id="open-youtube">Video</a></p>
+                        <p>Video</p>
                         <a href="http://player.vimeo.com/video/80629469" data-toggle="lightbox" data-gallery="youtubevideos" class="col-sm-4">
                             <img src="//i1.ytimg.com/vi/yP11r5n5RNg/mqdefault.jpg" class="img-fluid">
                         </a>
@@ -519,14 +504,17 @@
                         <a href="http://player.vimeo.com/video/80629469" data-toggle="lightbox" data-gallery="youtubevideos" class="col-sm-4">
                             <img src="//i1.ytimg.com/vi/b0jqPvpn3sY/mqdefault.jpg" class="img-fluid">
                         </a>
-                        <p><a href="http://player.vimeo.com/video/80629469" data-toggle="lightbox" id="open-youtube">Galary</a></p>
+
+                        <p>Gallery</p>
+
+
                         <a href="//i1.ytimg.com/vi/yP11r5n5RNg/mqdefault.jpg" data-toggle="lightbox" data-gallery="youtubevideos" class="col-sm-4">
                             <img src="//i1.ytimg.com/vi/yP11r5n5RNg/mqdefault.jpg" class="img-fluid">
                         </a>
-                        <a  data-toggle="lightbox" data-gallery="youtubevideos" class="col-sm-4">
+                        <a href="//i1.ytimg.com/vi/iQ4D273C7Ac/mqdefault.jpg" data-toggle="lightbox" data-gallery="youtubevideos" class="col-sm-4">
                             <img src="//i1.ytimg.com/vi/iQ4D273C7Ac/mqdefault.jpg" class="img-fluid">
                         </a>
-                        <a  data-toggle="lightbox" data-gallery="youtubevideos" class="col-sm-4">
+                        <a href="//i1.ytimg.com/vi/b0jqPvpn3sY/mqdefault.jpg" data-toggle="lightbox" data-gallery="youtubevideos" class="col-sm-4">
                             <img src="//i1.ytimg.com/vi/b0jqPvpn3sY/mqdefault.jpg" class="img-fluid">
                         </a>
 
@@ -534,6 +522,7 @@
                 </div>
             </div>
             <div class="row">
+                <h3>Testimonials</h3>
                 <div id="testimonial">
                     <div class="tst-item clearfix">
                         <div class="tst-single clearfix">
@@ -794,12 +783,22 @@
                     </div>
                 </div>
 
-
-
-                <div class="col-md-6 col-sm-12 col-xs-12 wow fadeInUp">
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
                     <div class="pricing-table text-center">
                         <div class="price">
-                            <span class="plan">Course Catalog</span>
+                            <span class="plan">Mechanics & FEA  tool</span>
+                            <span class="value">Mechanical  & Civil Engineering</span><br />
+                            <span class="value">Duration: 40 hrs</span>
+                        </div>
+                        <a href="#" class="btn btn-price">View Details</a>
+                        <a href="#" class="btn btn-price">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">All Course Catalogs</span>
                             <!--<span class="value">Click here to view full catalog</span>-->
                         </div>
                         <a href="courses.html" class="btn btn-price">Click here</a>
@@ -1073,5 +1072,22 @@
     <script src="js/wow.min.js"></script>
     <!-- theme custom scripts -->
     <script src="js/main.js"></script>
+    <script src="js/lightbox/ekko-lightbox.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+
+        //$('#open-youtube').click(function (e) {
+        //    e.preventDefault();
+        //    $(this).ekkoLightbox();
+        //});
+        //$('#open-image').click(function (e) {
+        //    e.preventDefault();
+        //    $(this).ekkoLightbox();
+        //});
+    </script>
 </body>
 </html>
