@@ -44,9 +44,12 @@
     <!-- Modernizer Script for old Browsers -->
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <script src="lightbox-master\dist\ekko-lightbox.min.js"></script>
-    <script type="text/javascript">
-        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-            event.preventDefault();
+
+
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>-->
+<script type="text/javascript">
+        $('#open-youtube').click(function (e) {
+            e.preventDefault();
             $(this).ekkoLightbox();
         });
         $('#open-image').click(function (e) {
@@ -500,14 +503,8 @@
                 <div class="col-md-12 wow fadeInLeft">
                     <div class="abouttst-content">
                         <p>Hi! ARTEM was established with a passion for engineering by IITians & MBA’s. Engineers love sensible designs and enjoy perfecting them. ARTEM truly believe that knowledge is best shared and so we are excited to share our technical as well as industry expertise in using CAE various powerful tools. </p>
-                        <p>
-                            <a href="http://www.youtube.com/watch?v=k6mFF3VmVAs" data-toggle="lightbox" data-gallery="youtubevideos" class="col-sm-4">
-                                <img src="//i1.ytimg.com/vi/yP11r5n5RNg/mqdefault.jpg" class="img-fluid">
-                            </a>
-                        </p>
-                        <a href="https://unsplash.it/1200/768.jpg?image=258" id="open-image" class="col-sm-4">
-                            <img src="https://unsplash.it/600.jpg?image=258" class="img-fluid">
-                        </a>
+                        <p><a href="http://player.vimeo.com/video/80629469" data-toggle="lightbox" id="open-youtube">City Lights - from Colin Rich (using embed link)</a></p>
+                      
 
                     </div>
                 </div>
