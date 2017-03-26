@@ -193,7 +193,9 @@
                 <a class="sl-next" href="#home-carousel" data-slide="next">
                     <i class="fa fa-angle-right fa-3x"></i>
                 </a>
+             
             </nav>
+            
         </div>
         <!--<div class="container">
             <div class="row">
@@ -397,7 +399,29 @@
                         </div>
                     </div>
                 </div>
+                <div class="modal fade" id="offersmodel" tabindex="-1" role="dialog" aria-labelledby="offersmodelModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="offersmodelLabel"><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp; OFFERS</h5>
+                                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>-->
+                            </div>
+                            <div class="modal-body">
+                             <ul>
+                                 <li>1.OFFER 1</li>
+                                 <li>2.OFFER 2</li>
+                                 <li>3.OFFER 3</li>
+                             </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
 
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!--start Modals-->
                 <div class="modal fade" id="workshopTrainingModal" tabindex="-1" role="dialog" aria-labelledby="workshopTrainingModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -1034,9 +1058,16 @@
         });
 
     $(document).ready(function ($) {
-        setInterval(function () {
-            var firstLi = $('#products li').first().detach();
-            $('#products').append($(firstLi));
+        //setInterval(function () {
+        //    var firstLi = $('#products li').first().detach();
+        //    $('#products').append($(firstLi));
+        //}, 5000);
+
+       // $('#offersmodel').modal('show');
+
+     
+        setTimeout(function () {
+            $('#offersmodel').modal('show');
         }, 5000);
 
     });
