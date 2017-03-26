@@ -74,51 +74,35 @@
                 <!-- /logo -->
             </div>
             <!-- main nav -->
+            <form id="signin" class="navbar-form navbar-right" role="form" style="height: 12px;">
+                <div class=" input-group">
+                <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">
+</div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
+                    <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+                    <!--<a href="#">Forgotten account?</a>-->
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+           
             <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
                 <ul id="nav" class="nav navbar-nav">
                     <li class="current"><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
+                    <li><a href="#classroomtraing">Class Room Traing</a></li>
+                    <li><a href="#onlinetraing">Online Traing</a></li>
                     <li><a href="#service">Services</a></li>
-                    <li><a href="#allCourses">Courses</a></li>
                     <li><a href="#subscribe">FQA's</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a data-toggle="modal" href="#" data-target="#SignupSigninModel" class="cursor-pointer">Sign-Up / Sign-In</a></li>
+                    <li><a data-toggle="modal" href="#" data-target="#SignupSigninModel" class="cursor-pointer">Sign-Up</a></li>
                 </ul>
             </nav>
+            
             <!-- /main nav -->
         </div>
-        <div id="marquee" class="container">
-            <font size="3" color="white"><strong>
-    <marquee behavior="right">New batch <i class="fa fa-info-circle" aria-hidden="true"></i> Mechanics & FEA  tool on 26th March 2017<i class="fa fa-info-circle" aria-hidden="true"></i> New batch <i class="fa fa-info-circle" aria-hidden="true"></i> ANSYS MECHANIAL APDL COURSE on 26th March 2017 **New batch **MINI Projects & Projects  on 26th March 2017 </marquee></strong>
 
-</font>
-                <!--<ul id="products">
-            <li style="display:none">
-                <h3>Title vijay</h3>
-                <a id="button" href="#vijay" target="_blank"> more Info</a>
-            </li>
-            <li style="display:none">
-                <h3>Title ajay</h3>
-                <a id="button" href="#ajay" target="_blank">more Info</a>
-            </li>
-            <li style="display:none">
-                <h3>Title ram</h3>
-                <a id="button" href="#ram" target="_blank">more Info</a>
-            </li>
-            <li>
-                <h3>Title a</h3>
-                <a id="button" href="#vijay" target="_blank"> more Info</a>
-            </li>
-            <li>
-                <h3>Title b</h3>
-                <a id="button" href="#ajay" target="_blank">more Info</a>
-            </li>
-            <li>
-                <h3>Title c</h3>
-                <a id="button" href="#ram" target="_blank">more Info</a>
-            </li>
-        </ul>-->
-</div>
     </header>
     <!--
     End Fixed Navigation
@@ -127,104 +111,149 @@
     Home Slider
     ==================================== -->
     <section id="home">
-        
-        <div id="home-carousel" class="carousel slide" data-interval="false">
-            <ol class="carousel-indicators">
-                <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#home-carousel" data-slide-to="1"></li>
-                <li data-target="#home-carousel" data-slide-to="2"></li>
-            </ol>
-            <!--/.carousel-indicators-->
-            <div class="carousel-inner">
-                <div class="item active" style="background-image: url('img/slider/bnr1.png')">
-                    <div class="carousel-caption">
-                        <div class="animated bounceInRight">
-                            <h2>ARTEM</h2>
-                            <p>“Differential equations define nature, our job is to recognize and replicate their awesomeness into our design”</p>
+       
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="home-carousel" class="carousel slide" data-interval="false">
+                        <ol class="carousel-indicators">
+                            <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#home-carousel" data-slide-to="1"></li>
+                            <li data-target="#home-carousel" data-slide-to="2"></li>
+                        </ol>
+                        <!--/.carousel-indicators-->
+                        <div class="carousel-inner">
+                            <div class="item active" style="background-image: url('img/slider/bnr1.png')">
+                                <div class="carousel-caption">
+                                    <div class="animated bounceInRight">
+                                        <h2>ARTEM</h2>
+                                        <p>“Differential equations define nature, our job is to recognize and replicate their awesomeness into our design”</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" style="background-image: url('img/slider/bnr2.png')">
+                                <div class="carousel-caption">
+                                    <div class="animated bounceInDown">
+                                        <h2>ARTEM</h2>
+                                        <p>We pat the curious mind and smack the sleepy head until they create something breathtaking. Welcome to Artem Academy, gateway to the astounding side of Computer Aided Engineering (CAE).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" style="background-image: url('img/slider/bnr3.png')">
+                                <div class="carousel-caption">
+                                    <div class="animated bounceInDown">
+                                        <h2>ARTEM</h2>
+                                        <p>The goal of education is understanding; the goal of training is performance.--    Frank Bell</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" style="background-image: url('img/slider/bnr4.png'); ">
+                                <div class="carousel-caption">
+                                    <div class="animated bounceInDown">
+                                        <h2>ARTEM</h2>
+                                        <p>LEARNING IS NOT A SPECTATOR SPORT. --D.Bolcher..</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" style="background-image: url('img/slider/bnr5.png')">
+                                <div class="carousel-caption">
+                                    <div class="animated bounceInDown">
+                                        <h2>ARTEM</h2>
+                                        <p>Leadership and learning are indispensable to each other.--J.F.Kennedy..</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item" style="background-image: url('img/slider/bnr6.png')">
+                                <div class="carousel-caption">
+                                    <div class="animated bounceInDown">
+                                        <h2>ARTEM</h2>
+                                        <p>Practice is the hardest part of learning,and training is the essence of transformation.--   Ann Voskamp..t</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <!--/.carousel-inner-->
+                        <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
+                            <a class="sl-prev hidden-xs" href="#home-carousel" data-slide="prev">
+                                <i class="fa fa-angle-left fa-3x"></i>
+                            </a>
+                            <a class="sl-next" href="#home-carousel" data-slide="next">
+                                <i class="fa fa-angle-right fa-3x"></i>
+                            </a>
+
+                        </nav>
+
                     </div>
                 </div>
-                <div class="item" style="background-image: url('img/slider/bnr2.png')">
-                    <div class="carousel-caption">
-                        <div class="animated bounceInDown">
-                            <h2>ARTEM</h2>
-                            <p>We pat the curious mind and smack the sleepy head until they create something breathtaking. Welcome to Artem Academy, gateway to the astounding side of Computer Aided Engineering (CAE).</p>
-                        </div>
-                    </div>
+                <div class="col-md-2">
+                    Highlights
+                    shfoiregjoqrw
+                    eheriojower
+                    jerijewporw
+                    hjrwehpiwe
+                    hiwertjweo[tkwp
+                    jirweijw
+                    jrjtiprwjtporw]
                 </div>
-                <div class="item" style="background-image: url('img/slider/bnr3.png')">
-                    <div class="carousel-caption">
-                        <div class="animated bounceInDown">
-                            <h2>ARTEM</h2>
-                            <p>The goal of education is understanding; the goal of training is performance.--    Frank Bell</p>
-                        </div>
-                    </div>
+                <div class="col-md-2">
+                    Highlights
+                    shfoiregjoqrw
+                    eheriojower
+                    jerijewporw
+                    hjrwehpiwe
+                    hiwertjweo[tkwp
+                    jirweijw
+                    jrjtiprwjtporw]
                 </div>
-                <div class="item" style="background-image: url('img/slider/bnr4.png'); ">
-                    <div class="carousel-caption">
-                        <div class="animated bounceInDown">
-                            <h2>ARTEM</h2>
-                            <p>Leadership and learning are indispensable to each other.--J.F.Kennedy..</p>
-                        </div>
-                    </div>
+                <div class="col-md-2">
+                    Highlights
+                    shfoiregjoqrw
+                    eheriojower
+                    jerijewporw
+                    hjrwehpiwe
+                    hiwertjweo[tkwp
+                    jirweijw
+                    jrjtiprwjtporw]
                 </div>
-                <div class="item" style="background-image: url('img/slider/bnr5.png')">
-                    <div class="carousel-caption">
-                        <div class="animated bounceInDown">
-                            <h2>ARTEM</h2>
-                            <p>LEARNING IS NOT A SPECTATOR SPORT. --D.Bolcher..</p>
-                        </div>
-                    </div>
                 </div>
-                <div class="item" style="background-image: url('img/slider/bnr6.png')">
-                    <div class="carousel-caption">
-                        <div class="animated bounceInDown">
-                            <h2>ARTEM</h2>
-                            <p>Practice is the hardest part of learning,and training is the essence of transformation.--   Ann Voskamp..t</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/.carousel-inner-->
-            <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
-                <a class="sl-prev hidden-xs" href="#home-carousel" data-slide="prev">
-                    <i class="fa fa-angle-left fa-3x"></i>
-                </a>
-                <a class="sl-next" href="#home-carousel" data-slide="next">
-                    <i class="fa fa-angle-right fa-3x"></i>
-                </a>
-             
-            </nav>
+        <!--<div class="row">
             
-        </div>
-        <!--<div class="container">
+        </div>-->
+            <!--<div id="marquee" class="container">
+                    <font size="3" color="white"><strong>
+            <marquee behavior="right">New batch <i class="fa fa-info-circle" aria-hidden="true"></i> Mechanics & FEA  tool on 26th March 2017<i class="fa fa-info-circle" aria-hidden="true"></i> New batch <i class="fa fa-info-circle" aria-hidden="true"></i> ANSYS MECHANIAL APDL COURSE on 26th March 2017 **New batch **MINI Projects & Projects  on 26th March 2017 </marquee></strong>
+
+        </font>
+
+        </div>-->
+            <!--<div class="container">
             <div class="row">
                 <div id="testimonial">
                     <div class="tst-content">-->
-                        <!--<div data-spy="marquee" data-life="1">Next online training starts from 1st, April 2017.</div>
-                        <div data-spy="marquee" data-life="2">Next Workshop training starts from 25th, March 2017.</div>-->
-                        <!--<marquee>
-                            <p><b>Latest Updates:</b> Next online training starts from 1st, April 2017.</p>
-                            <p><b>Latest Updates:</b> Next online training starts from 1st, April 2017.</p>
-                        </marquee>-->
-                        <!--<h3>Bridge</h3>
-                        <p class="caption">fgsfg sf gfsdg fd gdfgs fg</p>
+            <!--<div data-spy="marquee" data-life="1">Next online training starts from 1st, April 2017.</div>
+        <div data-spy="marquee" data-life="2">Next Workshop training starts from 25th, March 2017.</div>-->
+            <!--<marquee>
+            <p><b>Latest Updates:</b> Next online training starts from 1st, April 2017.</p>
+            <p><b>Latest Updates:</b> Next online training starts from 1st, April 2017.</p>
+        </marquee>-->
+            <!--<h3>Bridge</h3>
+        <p class="caption">fgsfg sf gfsdg fd gdfgs fg</p>
 
-                        <p class="caption">Nighttime display of the Memphis/Arkansas Bridge.</p>-->
-                        <!--<div data-spy="marquee" class="marquee" id="polaroid" data-blend="true" data-life="5">
-                            <div data-label="Bridge" data-caption="Nighttime display of the Memphis/Arkansas Bridge."><p class="caption">Nighttime display of the Memphis/Arkansas Bridge.</p></div>
-                            <div data-label="Concert" data-caption="Young the Giant in concert at Minglewood Hall."><p class="caption">fgsfg sf gfsdg fd gdfgs fg</p></div>
-                            <div data-label="Reflection" data-caption="Chicago skyscrapers reflecting in a building."></div>
-                            <div data-label="Carnival" data-caption="A shot of the carnival from a ferris wheel."></div>
-                            <div data-label="Bean" data-caption="The Bean in Chicago."><img src="assets/marquee-05.jpg" /></div>
-                        </div>-->
-                        
-                    <!--</div>
+        <p class="caption">Nighttime display of the Memphis/Arkansas Bridge.</p>-->
+            <!--<div data-spy="marquee" class="marquee" id="polaroid" data-blend="true" data-life="5">
+            <div data-label="Bridge" data-caption="Nighttime display of the Memphis/Arkansas Bridge."><p class="caption">Nighttime display of the Memphis/Arkansas Bridge.</p></div>
+            <div data-label="Concert" data-caption="Young the Giant in concert at Minglewood Hall."><p class="caption">fgsfg sf gfsdg fd gdfgs fg</p></div>
+            <div data-label="Reflection" data-caption="Chicago skyscrapers reflecting in a building."></div>
+            <div data-label="Carnival" data-caption="A shot of the carnival from a ferris wheel."></div>
+            <div data-label="Bean" data-caption="The Bean in Chicago."><img src="assets/marquee-05.jpg" /></div>
+        </div>-->
+            <!--</div>
                 </div>
             </div>
         </div>-->
-        
-    </section>
+
+</section>
+
     <!--
     End #home Slider
     ========================== -->
@@ -339,6 +368,22 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="media">
+                        <a href="#" class="pull-left">
+                            <img src="img/icons/camera.png" alt="Camera">
+                        </a>
+                        <div class="media-body">
+                            <h3 data-toggle="modal" data-target="#classRoomTrainingModal" class="cursor-pointer">Working professionals</h3>
+                            <p>
+                                The fact that a teacher is also a learner and must be understood in its right perspective. &quot;When
+                                one teaches, two learn.&quot; This is the spirit behind learning to teach.
+                                Here we provide advanced tailor made training programs for faculties on varied and specialized
+                                requirements to emphasize their skills resulting in better coaching for students. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-6 col-sm-12 wow fadeInLeft">
                     <div class="media">
                         <a href="#" class="pull-left">
@@ -346,23 +391,15 @@
                         </a>
                         <div class="media-body">
                             <h3 data-toggle="modal" data-target="#workshopTrainingModal" class="cursor-pointer">Workshop Training</h3>
-                            <p>FEA is a powerful tool – it is used practically in research as well as various engineering applications today.  A saying that is quite common in the industry is “garbage in, garbage out.”</p>
+                            <p>FEA is a powerful tool – it is used practically in research as well as various engineering applications today. 
+                             A saying that is quite common in the industry is “garbage in, garbage out.”
+                                FEA is a powerful tool – it is used practically in research as well as various engineering applications today.
+                                A saying that is quite common in the industry is “garbage in, garbage out.”</p>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="media">
-                        <a href="#" class="pull-left">
-                            <img src="img/icons/cog.png" alt="Cog">
-                        </a>
-                        <div class="media-body">
-                            <h3 data-toggle="modal" data-target="#facultyTrainingModal" class="cursor-pointer">Faculty Training</h3>
-                            <p>The fact that a teacher is also a learner and must be understood in its right perspective. "When one teaches, two learn." This is the spirit behind learning to teach.</p>
-                        </div>
-                    </div>
-
-                </div>
+                
                 <div class="col-md-6 col-sm-12 wow fadeInLeft">
                     <div class="media">
                         <a href="#" class="pull-left">
@@ -383,22 +420,18 @@
                 <div class="col-md-6 col-sm-12 wow fadeInRight" data-wow-delay="0.2s">
                     <div class="media">
                         <a href="#" class="pull-left">
-                            <img src="img/icons/camera.png" alt="Camera">
+                            <img src="img/icons/cog.png" alt="Cog">
                         </a>
                         <div class="media-body">
-                            <h3 data-toggle="modal" data-target="#classRoomTrainingModal" class="cursor-pointer">Working professionals</h3>
-                            <p>
-                                The fact that a teacher is also a learner and must be understood in its right perspective. &quot;When
-                                one teaches, two learn.&quot; This is the spirit behind learning to teach.
-                                Here we provide advanced tailor made training programs for faculties on varied and specialized
-                                requirements to emphasize their skills resulting in better coaching for students. ARTEM is
-                                assisted by a set of academic and industry experienced faculties who are capable of conducting
-                                the training programs without diluting the standards of the powerful CAE tool along with the
-                                academic FEA knowledge.
-                            </p>
+                            <h3 data-toggle="modal" data-target="#facultyTrainingModal" class="cursor-pointer">Faculty Training</h3>
+                            <p>The fact that a teacher is also a learner and must be understood in its right perspective. "When one teaches, two learn." This is the spirit behind learning to teach.</p>
                         </div>
                     </div>
+
                 </div>
+                
+                
+
                 <div class="modal fade" id="offersmodel" tabindex="-1" role="dialog" aria-labelledby="offersmodelModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -542,11 +575,115 @@
     <!--
     #pricing
     ========================== -->
-    <section id="allCourses">
+    <section id="onlinetraing">
         <div class="container">
             <div class="row">
                 <div class="section-title text-center wow fadeInUp">
-                    <h2>Courses</h2>
+                    <h2>Online Training</h2>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">Finite Element Methods</span>
+                            <span class="value">Mechanical  & Civil Engineering</span><br />
+                            <span class="value">Duration: 50 hrs</span>
+                        </div>
+                        <a data-toggle="modal" data-target="#mdlViewCourseDetail" class="btn btn-price cursor-pointer">View Details</a>
+                        <a data-toggle="modal" data-target="#mdlCourseContact" class="btn btn-price cursor-pointer">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">Solid Mechanics</span>
+                            <span class="value">Mechanical  Engineering</span><br />
+                            <span class="value">Duration: 40 hrs</span>
+                        </div>
+                        <a data-toggle="modal" data-target="#mdlViewCourseDetail" class="btn btn-price cursor-pointer">View Details</a>
+                        <a data-toggle="modal" data-target="#mdlCourseContact" class="btn btn-price cursor-pointer">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">Machine Desining</span>
+                            <span class="value">Mechanical  Engineering</span><br />
+                            <span class="value">Duration: 40 hrs</span>
+                        </div>
+                        <a data-toggle="modal" data-target="#mdlViewCourseDetail" class="btn btn-price cursor-pointer">View Details</a>
+                        <a data-toggle="modal" data-target="#mdlCourseContact" class="btn btn-price cursor-pointer">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">Strength of Materials</span>
+                            <span class="value">Civil  Engineering</span><br />
+                            <span class="value">Duration: 40 hrs</span>
+                        </div>
+                        <a data-toggle="modal" data-target="#mdlViewCourseDetail" class="btn btn-price cursor-pointer">View Details</a>
+                        <a data-toggle="modal" data-target="#mdlCourseContact" class="btn btn-price cursor-pointer">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">Advanced Strength of Materials</span>
+                            <span class="value">Civil  Engineering</span><br />
+                            <span class="value">Duration: 40 hrs</span>
+                        </div>
+                        <a data-toggle="modal" data-target="#mdlViewCourseDetail" class="btn btn-price cursor-pointer">View Details</a>
+                        <a data-toggle="modal" data-target="#mdlCourseContact" class="btn btn-price cursor-pointer">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">Mechanics & FEA  tool</span>
+                            <span class="value">Mechanical  & Civil Engineering</span><br />
+                            <span class="value">Duration: 40 hrs</span>
+                        </div>
+                        <a data-toggle="modal" data-target="#mdlViewCourseDetail" class="btn btn-price cursor-pointer">View Details</a>
+                        <a data-toggle="modal" data-target="#mdlCourseContact" class="btn btn-price cursor-pointer">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">Mechanics & FEA  tool</span>
+                            <span class="value">Mechanical  & Civil Engineering</span><br />
+                            <span class="value">Duration: 40 hrs</span>
+                        </div>
+                        <a data-toggle="modal" data-target="#mdlViewCourseDetail" class="btn btn-price cursor-pointer">View Details</a>
+                        <a data-toggle="modal" data-target="#mdlCourseContact" class="btn btn-price cursor-pointer">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
+                    <div class="pricing-table text-center">
+                        <div class="price">
+                            <span class="plan">All Course Catalogs</span>
+                        </div>
+                        <a href="courses.html" class="btn btn-price">Click here</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="classroomtraing">
+        <div class="container">
+            <div class="row">
+                <div class="section-title text-center wow fadeInUp">
+                    <h2>Class room training</h2>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp">
                     <div class="pricing-table text-center">
@@ -902,7 +1039,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="SignupSigninModelLabel">Login / Register</h5>
+                    <h5 class="modal-title" id="SignupSigninModelLabel">Register</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -911,7 +1048,7 @@
                 <div class="clear"></div>
                 <div class="modal-body">
 
-                    <div class="row col-md-5 col-md-offset-1">
+                    <div class="row col-md-12">
                         <div class="subtitle text-center">
                             <h3>Sign-up</h3>
                         </div>
@@ -970,14 +1107,14 @@
                             </div>-->
                             <div class="form-group">
 
-                                <div class="pull-right">
+                                <div class="center">
                                     <input id="btnReg" name="btnReg" type="button" value="Register" class="btn btn-primary">
 
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row col-md-5 col-md-offset-1">
+                    <!--<div class="row col-md-5 col-md-offset-1">
                         <div class="subtitle text-center">
                             <h3>Sign-In</h3>
                         </div>
@@ -1005,7 +1142,7 @@
                             </div>
 
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="clear"></div>
                 <div class="modal-footer">
@@ -1066,9 +1203,9 @@
        // $('#offersmodel').modal('show');
 
      
-        setTimeout(function () {
-            $('#offersmodel').modal('show');
-        }, 5000);
+        //setTimeout(function () {
+        //    $('#offersmodel').modal('show');
+        //}, 5000);
 
     });
    
