@@ -46,6 +46,7 @@
     <!-- Modernizer Script for old Browsers -->
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     <script src="js/dojo-bootstrap/assets/marquee.css"></script>
+ 
 </head>
 
 <body>
@@ -86,6 +87,38 @@
             </nav>
             <!-- /main nav -->
         </div>
+        <div id="marquee" class="container">
+            <font size="3" color="white"><strong>
+    <marquee behavior="right">New batch ** Mechanics & FEA  tool on 26th March 2017** New batch ** ANSYS MECHANIAL APDL COURSE on 26th March 2017 **New batch **MINI Projects & Projects  on 26th March 2017 </marquee></strong>
+
+</font>
+                <!--<ul id="products">
+            <li style="display:none">
+                <h3>Title vijay</h3>
+                <a id="button" href="#vijay" target="_blank"> more Info</a>
+            </li>
+            <li style="display:none">
+                <h3>Title ajay</h3>
+                <a id="button" href="#ajay" target="_blank">more Info</a>
+            </li>
+            <li style="display:none">
+                <h3>Title ram</h3>
+                <a id="button" href="#ram" target="_blank">more Info</a>
+            </li>
+            <li>
+                <h3>Title a</h3>
+                <a id="button" href="#vijay" target="_blank"> more Info</a>
+            </li>
+            <li>
+                <h3>Title b</h3>
+                <a id="button" href="#ajay" target="_blank">more Info</a>
+            </li>
+            <li>
+                <h3>Title c</h3>
+                <a id="button" href="#ram" target="_blank">more Info</a>
+            </li>
+        </ul>-->
+</div>
     </header>
     <!--
     End Fixed Navigation
@@ -94,6 +127,7 @@
     Home Slider
     ==================================== -->
     <section id="home">
+        
         <div id="home-carousel" class="carousel slide" data-interval="false">
             <ol class="carousel-indicators">
                 <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
@@ -187,6 +221,7 @@
                 </div>
             </div>
         </div>-->
+        
     </section>
     <!--
     End #home Slider
@@ -997,6 +1032,15 @@
             //    query('.frame p.caption')[0].innerHTML = messageData.caption;
             //});
         });
+
+    $(document).ready(function ($) {
+        setInterval(function () {
+            var firstLi = $('#products li').first().detach();
+            $('#products').append($(firstLi));
+        }, 5000);
+
+    });
+   
 
         q('#polaroid').marquee({
             anim: "scroll", duration: .3,
