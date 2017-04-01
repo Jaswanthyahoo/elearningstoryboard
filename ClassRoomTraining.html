@@ -41,10 +41,24 @@
     <!-- Main Responsive -->
     <link rel="stylesheet" href="css/responsive.css">
 
-
+    <style type="text/css">
+        .blockquoteCustomized-info {
+        
+             font-size: 12px;
+            border-left: 5px solid #00c7fc;
+        }
+        .blockquoteCustomized-success {
+            font-size: 12px;
+            border-left: 5px solid #d6e9c6;
+        }
+        .blockquoteCustomized-warning {
+            font-size: 12px;
+            border-left: 5px solid #faebcc;
+        }
+    </style>
     <!-- Modernizer Script for old Browsers -->
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-   
+
 
 </head>
 
@@ -79,7 +93,7 @@
                     <li><a href="#service">Services</a></li>
                     <li><a href="#signup-login">Sign-Up / Sign-In</a></li>
                     <li><a href="#about">About</a></li>-->
-                    <li class="current"><a href="#allCourses">Class Room Training</a></li>
+                    <li class="current"><a href="#">Class Room Training</a></li>
                     <!--<li><a href="#subscribe">FQA's</a></li>
                     <li><a href="#contact">Contact</a></li>-->
                 </ul>
@@ -99,7 +113,7 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">
-                                Our Methodology
+                                <i class="fa fa-graduation-cap" aria-hidden="true"></i> &nbsp;  Our Methodology
                             </h3>
                         </div>
 
@@ -125,7 +139,7 @@
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title">
-                                Featured Courses
+                                <i class="fa fa-book" aria-hidden="true"></i> &nbsp; Featured Courses
                             </h3>
                         </div>
 
@@ -140,20 +154,90 @@
                                 <li><br /><p><i class="fa fa-bullhorn" aria-hidden="true"></i> &nbsp;<a href="#">ARTEM Academy Certified Training Programs in Hypermesh</a></p></li>
                                 <li><br /><p><i class="fa fa-bullhorn" aria-hidden="true"></i> &nbsp;<a href="#">ARTEM Academy Career Programs in CAD/CAM/CAE</a></p></li>
 
-                            
+
                                 <li><br /><p><i class="fa fa-bullhorn" aria-hidden="true"></i> &nbsp;<a href="#">Corporate Training</a></p></li>
                             </ul>
                         </div>
-                       
+
                     </div>
                 </div>
             </div>
-           
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <i class="fa fa-eye" aria-hidden="true"></i> &nbsp; Our Vision
+                            </h3>
+                        </div>
+
+                        <div class="panel-body">
+                            <p>
+                                ARTEM offers theoretical and software courses for career progression in the field of design and analysis. Courses have been designed by the industrial experts and academicians.  Courses are planned to cover a broad range of topics from the basic physical concepts to advanced modeling techniques through scheduled classes. Training solutions are designed to provide you with both the comprehensive and subject-specific knowledge you need to effectively apply to solve your engineering problems.
+                                Our strength is to make you expertise conforming to industry standards with the academic knowledge gained.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                Who should do the basics course? <i class="fa fa-question-circle" aria-hidden="true"></i>
+                            </h3>
+                        </div>
+
+                        <div class="panel-body">
+
+                            <blockquote class="blockquoteCustomized-info">
+                                <p class="mb-0">
+                                    Who should do the basics course?
+                                    This course is for pretty much anybody who is interested in engineering. We teach you basics of CAE such that you can use any modeling and analysis software to produce results by using the fundamentals of FEA principles and to make sense out of them.
+                                </p>
+                            </blockquote>
+
+                            <blockquote class="blockquoteCustomized-success">
+                                <p class="mb-0">
+                                    Why should I do it?
+                                    Suppose you have access to the software and even learnt the basics of FEA, but that is theoretical knowledge.
+                                    Our pedagogy is pragmatic approach. In addition to elementary teaching about the subject, you will also learn
+                                    the idiosyncrasies of the tool. We will teach you to examine the data methodically, which will enable you or
+                                    your clients to design better. We have years of experience in applying thought to perfect the output so that
+                                    you don’t have to start from scratch. After all, we are humans; we build upon knowledge from experience; and
+                                    we have plenty of it.
+                                </p>
+                            </blockquote>
+
+                            <blockquote class="blockquoteCustomized-warning">
+                                <p class="mb-0"> Theoretical course content will be same as academic syllabus for long term with the industry usage and live examples. </p>
+                            </blockquote>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
         </div>
         <br />
         <div class="container">
-            <h3>  <span class="label label-primary">Courses Offered</span></h3>
-</div>
+            <h3>  <span class="label label-warning"><i class="fa fa-book" aria-hidden="true"></i> &nbsp; Course Offered</span></h3>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="table-responsive">
@@ -161,8 +245,9 @@
                         <thead class="thead-inverse">
                             <tr>
                                 <th>#SR. NO.</th>
-                                <th>COURSE TITLE</th>
-                                <th>DURATION (HRS.)</th>
+                                <th>COURSE TITLE <i class="fa fa-book" aria-hidden="true"></i> &nbsp;</th>
+                                <th>DURATION (HRS.<i class="fa fa-clock-o" aria-hidden="true"></i>)</th>
+                                <th>Course Content <i class="fa fa-book" aria-hidden="true"></i> &nbsp;</th>
                             </tr>
                         </thead>
                         <tbody id="myTable">
@@ -170,6 +255,7 @@
                                 <td>1</td>
                                 <td>FEA using ANSYS Classic ( ANSYS APDL Mechanical)</td>
                                 <td>50</td>
+                                <td><i class="fa fa-download" aria-hidden="true"></i></td>
 
                             </tr>
                             <tr>
@@ -177,28 +263,32 @@
 
                                 <td>FEA using ANSYS Workbench (Design Modular & Mechanical)</td>
                                 <td>50</td>
-
+                                <td><i class="fa fa-download" aria-hidden="true"></i></td>
 
                             </tr>
                             <tr>
                                 <td>3</td>
                                 <td>FEA using ANSYS Classic & Workbench</td>
                                 <td>60</td>
+                                <td><i class="fa fa-download" aria-hidden="true"></i></td>
                             </tr>
                             <tr>
                                 <td>4</td>
                                 <td>Advanced FEA using ANSYS Classic</td>
                                 <td>50</td>
+                                <td><i class="fa fa-download" aria-hidden="true"></i></td>
                             </tr>
                             <tr>
                                 <td>5</td>
                                 <td>Advanced FEA using ANSYS Workbench (Design Modular & Mechanical)</td>
                                 <td>60</td>
+                                <td><i class="fa fa-download" aria-hidden="true"></i></td>
                             </tr>
                             <tr>
                                 <td>6</td>
                                 <td>Exclusive APDL macros both for ANSYS Classic & Workbench</td>
                                 <td>50</td>
+                                <td><i class="fa fa-download" aria-hidden="true"></i></td>
                             </tr>
 
 
@@ -218,11 +308,11 @@
 
         </div>
         <div class="container">
-           
+
             <section id="subscribe">
                 <div class="container">
                     <div class="row">
-                        
+
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                             <div class="panel panel-primary">
                                 <div class="panel-heading" role="tab" id="headingOne">
@@ -297,11 +387,11 @@
                                             <li> IFSC Code: UTIB0000104</li>
                                             <li> RTGS Code: Same as above</li>
                                             <li> MICR Code: 411211004</li>
-</ul>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
