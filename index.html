@@ -78,7 +78,7 @@
                 <!-- /responsive nav button -->
                 <!-- logo -->
                 <h1 class="navbar-brand">
-                    <a href="#body">
+                    <a href="index.html">
                         <!--<img src="img/logo1.png" alt="Kasper Logo">-->
                         ARTEM
                     </a>
@@ -86,29 +86,30 @@
                 <!-- /logo -->
             </div>
             <!-- main nav -->
-            <form id="signin" class="navbar-form navbar-right" role="form" style="height: 12px;">
-                <div class="col-sm-4 input-group">
-                    <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
-                    <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">
-                </div>
-                <div class="col-sm-4 input-group">
-                    <span class="input-group-addon"><i class="fa fa-key" aria-hidden="true"></i></span>
-                    <input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
-                    <!--<a href="#">Forgotten account?</a>-->
-                </div>
-                <button class="btn btn-primary">Login</button>
-            </form>
+       
+          
+
 
             <nav class="collapse navigation navbar-collapse navbar-right" role="navigation">
                 <ul id="nav" class="nav navbar-nav">
                     <li class="current"><a href="#home">Home</a></li>
                     <li><a href="#about">About Us</a></li>
-                    <li><a href="#classroomtraing">Class Room Training</a></li>
-                    <li><a href="#onlinetraing">Online Training</a></li>
-                    <li><a href="#service">Services</a></li>
+                    <!--<li><a href="#classroomtraing">Class Room Training</a></li>
+                    <li><a href="#onlinetraing">Online Training</a></li>-->
+                    <!--<li><a href="#service">Services</a></li>-->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="ClassRoomTraining.html">Class Room Training</a></li>
+                            <li><a href="OnlineCourse.html">Online Training</a></li>
+                            <li><a href="OtherServices.html">Other Services</a></li>
+                        </ul>
+                       
+                    </li>
                     <li><a href="#subscribe">FQA's</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a data-toggle="modal" href="#" data-target="#SignupSigninModel" class="cursor-pointer">Sign-Up</a></li>
+                   
+                    <li><a data-toggle="modal" href="#" data-target="#SignupSigninModel" class="cursor-pointer">Log-In</a></li>
                 </ul>
             </nav>
 
@@ -983,8 +984,62 @@
             </div>
         </div>
     </div>
-
+    <!--login model-->
     <div class="modal fade" id="SignupSigninModel" tabindex="-1" role="dialog" aria-labelledby="SignupSigninModelLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignupSigninModelLabel">Log-In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="clear"></div>
+                <div class="modal-body">
+
+                    
+                    <div id="signin" class="row col-md-12">
+                        <div class="subtitle text-center">
+                            <h3>Log-In</h3>
+                        </div>
+                        <div>
+                            <div class="form-group">
+                                <label for="loginname">Login email:</label>
+                                <div>
+                                    <input id="txtloginname" name="txtloginname" type="text" placeholder="Login Email" class="form-control input-md" required="">
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginpwd">Password:</label>
+                                <div>
+                                    <input id="txtloginpwd" name="txtloginpwd" type="password" placeholder="Password" class="form-control input-md" required="">
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="center">
+                                    <input id="btnlogin" name="btnlogin" type="button" value="Login" class="btn btn-primary form-control"><br /><br />
+                                    <a href="#" id="Register" class="pull-left"><strong> Need to be Register?</strong></a>
+                                    <a href="#" id="fpwd" class="pull-right"><strong>Forgot Password?</strong></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="clear"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="SignupModel" tabindex="-1" role="dialog" aria-labelledby="SignupSigninModelLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -996,12 +1051,11 @@
                 </div>
                 <div class="clear"></div>
                 <div class="modal-body">
-
-                    <div class="row col-md-12">
+                    <div class="row col-md-12" id="signup">
                         <div class="subtitle text-center">
                             <h3>Sign-up</h3>
                         </div>
-                        <div id="signup">
+                        <div>
                             <div class="form-group">
                                 <label for="city">Name</label>
                                 <div>
@@ -1042,56 +1096,62 @@
                                     </select>
                                 </div>
                             </div>
-                            <!--<div class="form-group">
-                                <label for="selectbasic">Select Year</label>
-                                <div>
-                                    <select id="selectbasic" name="selectbasic" class="form-control input-md">
-                                        <option>--select year--</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                            </div>-->
+
                             <div class="form-group">
 
                                 <div class="center">
-                                    <input id="btnReg" name="btnReg" type="button" value="Register" class="btn btn-primary">
+                                    <input id="btnReg" name="btnReg" type="button" value="Register" class="form-control btn btn-primary"><br /><br />
+                                    <a href="#" id="login" class="pull-left"><strong> Logi-In?</strong></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ForgotPasswordModel" tabindex="-1" role="dialog" aria-labelledby="SignupSigninModelLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignupSigninModelLabel">Forgot Password</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="clear"></div>
+                <div class="modal-body">
+                    <div class="row col-md-12" id="divfpwd">
+                        <div class="subtitle text-center">
+                            <h3>Forgot Password</h3>
+                        </div>
+                        <div id="signup">
+
+                            <div class="form-group">
+                                <label for="Email">Email</label>
+                                <div>
+                                    <input id="Email" name="Email" type="text" placeholder="Email" class="form-control input-md" required="">
+
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <div class="center">
+                                    <input id="btnReg" name="btnReg" type="button" value="Send" class="form-control btn btn-primary"><br /><br />
+                                    <a href="#" id="login" class="pull-left"><strong> Logi-In?</strong></a>
 
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--<div class="row col-md-5 col-md-offset-1">
-                        <div class="subtitle text-center">
-                            <h3>Sign-In</h3>
-                        </div>
-                        <div id="signin">
-                            <div class="form-group">
-                                <label for="loginname">Login email:</label>
-                                <div>
-                                    <input id="txtloginname" name="txtloginname" type="text" placeholder="Login Email" class="form-control input-md" required="">
-
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="loginpwd">Password:</label>
-                                <div>
-                                    <input id="txtloginpwd" name="txtloginpwd" type="password" placeholder="Password" class="form-control input-md" required="">
-
-                                </div>
-                            </div>
-                            <div class="form-group">
-
-                                <div class="pull-right">
-                                    <input id="btnlogin" name="btnlogin" type="button" value="Login" class="btn btn-primary">
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>-->
                 </div>
                 <div class="clear"></div>
                 <div class="modal-footer">
@@ -1255,6 +1315,21 @@
                 $(this).css('border-color', '');
                 $("#result").slideUp();
             });
+            $("#Register").click(function () {
+                $('#SignupSigninModel,#ForgotPasswordModel').modal('hide');
+                $('#SignupModel').modal('show');
+            });
+
+            $("#fpwd").click(function () {
+                $('#SignupSigninModel,#SignupModel').modal('hide');
+                $('#ForgotPasswordModel').modal('show');
+            });
+
+            $("#login").click(function () {
+                $('#ForgotPasswordModel,#SignupModel').modal('hide');
+                $('#SignupSigninModel').modal('show');
+            });
+
 
         });
     </script>
