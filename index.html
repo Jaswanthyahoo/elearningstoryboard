@@ -523,7 +523,7 @@
                 </div>
                 <div class="modal-footer">
                     <a data-toggle="modal" data-target="#mdlCourseContact" class="btn btn-blue cursor-pointer">Contact</a>
-                    <button type="button" class="btn btn-blue" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -555,7 +555,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-blue" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -609,7 +609,7 @@
                 </div>
                 <div class="clear"></div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -685,7 +685,7 @@
                 </div>
                 <div class="clear"></div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -707,7 +707,7 @@
                         <div class="subtitle text-center">
                             <h3>Forgot Password</h3>
                         </div>
-                        <div id="signup">
+                        <div id="fpwddiv">
 
                             <div class="form-group">
                                 <label for="Email">Email</label>
@@ -722,7 +722,7 @@
 
                                 <div class="center">
                                     <input id="btnReg" name="btnReg" type="button" value="Send" class="form-control btn btn-primary"><br /><br />
-                                    <a href="#" id="login" class="pull-left"><strong> Logi-In?</strong></a>
+                                    <a href="#" id="loginfpwd" class="pull-left"><strong> Logi-In?</strong></a>
 
                                 </div>
                             </div>
@@ -731,7 +731,7 @@
                 </div>
                 <div class="clear"></div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -901,7 +901,7 @@
                 $('#ForgotPasswordModel').modal('show');
             });
 
-            $("#login").click(function () {
+            $("#login,#loginfpwd").click(function () {
                 $('#ForgotPasswordModel,#SignupModel').modal('hide');
                 $('#SignupSigninModel').modal('show');
             });
