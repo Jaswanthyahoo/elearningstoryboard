@@ -1202,25 +1202,29 @@ figcaption.mask span {
 }
       .nav > li > a:focus {
            text-decoration: none;
-           background-color: blue;
+           background-color: Cyan;
        }
 
        .nav > li > a:hover {
            text-decoration: none;
-           background-color: blue;
+           background-color: Cyan;
        }
 
 
        .nav > li.disabled > a {
-           color: blue;
+           color: Cyan;
        }
 
            .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
-               background-color: blue;
+               background-color: Cyan;
            }
 #navigation
 {
 background-color: #ddd !important;
 }
 
-background-color: #ddd !important;
+.dropdown-menu > li > a:hover{
+  color: #fff;
+  background-color: #b91773;
+  border-color: #fff;
+  }
