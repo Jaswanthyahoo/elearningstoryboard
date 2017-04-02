@@ -884,19 +884,17 @@ figcaption.mask span {
     Contact Us
 ============================================================*/
 
-.contact-form .input-field {
+/*.contact-form .input-field {
     margin-bottom: 30px;
-}
+}*/
 
-.contact-form .form-control {
-    border: 1px solid #dbdbdb;
-    padding: 20px;
-    border-radius: 0;
-    height: 58px;
-    box-shadow: none;
-}
+/*.contact-form .form-control {
+    border: 1px solid #dbdbdb;    
+    border-radius: 0;    
+   
+}*/
 
-.contact-form .message .form-control {
+/*.contact-form .message .form-control {
     height: 198px;
 }
 
@@ -917,7 +915,7 @@ figcaption.mask span {
         color: #1f2021;
         display: block;
         margin-bottom: 35px;
-    }
+    }*/
 
 
 
