@@ -1200,3 +1200,27 @@ figcaption.mask span {
 .scroll-text-for-4{
     height:200px;
 }
+      .nav > li > a:focus {
+           text-decoration: none;
+           background-color: blue;
+       }
+
+       .nav > li > a:hover {
+           text-decoration: none;
+           background-color: blue;
+       }
+
+
+       .nav > li.disabled > a {
+           color: blue;
+       }
+
+           .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
+               background-color: blue;
+           }
+#navigation
+{
+background-color: #ddd !important;
+}
+
+background-color: #ddd !important;
