@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Always force latest IE rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="Change, keywords, here">
+    <!-- meta character set -->
+    <meta charset="utf-8">
+    <!-- Site Title -->
+    <title>::ARTEM::</title>
+
+    <!--
+    Google Fonts
+    ============================================= -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+
+    <!--
+    CSS
+    ============================================= -->
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">-->
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="js/lightbox/ekko-lightbox.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Main Responsive -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <!-- Modernizer Script for old Browsers -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+   
+
+</head>
+
+<body>
+    <!--
+    Fixed Navigation
+    ==================================== -->
+    <header id="navigation" class="navbar-fixed-top">
+        <!-- main nav -->
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand current" href="index.html">ARTEM</a>
+
+            </div>
+
+
+        </div>
+
+
+        <nav class="navbar" style="margin-bottom: 0px;">
+            <div class="collapse navbar-collapse" id="myNavbar" style="background-color: #e16a18;">
+                <ul id="nav" class="nav navbar-nav">
+                    <li><a href="admin.html#Dashboard"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span>  Dashboard</a></li>
+                    <li><a href="admin.html#allQuestion"><span><i class="fa fa-question-circle" aria-hidden="true"></i></span>&nbsp;All Questions</a></li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span><i class="fa fa-cogs" aria-hidden="true"></i></span>&nbsp;Admin <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="AdminManageCourse.html">Manage Courses</a></li>
+                            <li><a href="AdminManageSubjects.html">Manage Subjects</a></li>
+                            <li><a href="AdminStudentCourseManage.html">Manage Student Courses</a></li>
+                            <li><a href="AdminUpdates.html">Manage Updates</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="admin.html#viewquestion"><span><i class="fa fa-eye" aria-hidden="true"></i></span>&nbsp; View your Questions</a></li>
+
+
+
+                </ul>
+            </div>
+        </nav>
+
+
+
+    </header>
+    <br />
+    <!--
+    End Fixed Navigation
+    ==================================== -->
+
+    <section id="allCourses">
+        <div class="container">
+                    
+
+               
+            <div class="row">
+                <div class="col-xs-4">
+                    <label for="ex2">Updates Type</label><br />
+                    <label class="btn btn-primary"><input type="checkbox" value=""> Courses</label>
+                    <label class="btn btn-info"><input type="checkbox" value="">Latest Offers</label>
+                    <label class="btn btn-success"><input type="checkbox" value=""> Latest Events</label>
+
+                </div>
+                <div class="col-xs-4">
+                    <label for="ex1">Text</label>
+                
+                        <textarea id="txtpostanswer" name="txtpostanswer" placeholder="Name" class="form-control input-md" rows="5" cols="10"></textarea>
+                        <!--<script type="text/javascript">
+                    CKEDITOR.replace('txtpostanswer');
+                </script>-->
+                   
+                </div>
+
+
+                <div class="col-xs-4">
+                    <label for="ex2"></label><br />
+                    <button class="btn btn-success">Add</button>
+                    <button class="btn btn-warning">Cancel</button>
+                    <button class="btn btn-danger">Delete</button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <br />
+        <div class="container">
+            <div class="container">
+                <h3>  <span class="label label-warning"><i class="fa fa-book" aria-hidden="true"></i> &nbsp; Updates Management</span></h3>
+            </div>
+            <div class="row">
+                <div class="table-responsive">
+                    <table class="table tabAmc table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#Sl.No.</th>
+                                <th>Updates Type</th>
+                                <th> Text</th>
+                                <th> Action</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id="myTable">
+                            <tr>
+                                <td>1</td>
+                                <td> Courses</td>
+                                <td>New batch for Finite Element Methods starts from 5th April, Call 9000123456 for more details.</td>
+                                <td><a class="fa fa-pencil-square-o" aria-hidden="true"></a>&nbsp;<a class="fa fa-eye" aria-hidden="true"></a>&nbsp;<a class="fa fa-trash" aria-hidden="true"></a></td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Latest Events</td>
+                                <td>New batch for Finite Element Methods starts from 5th April, Call 9000123456 for more details.</td>
+                                <td><a class="fa fa-pencil-square-o" aria-hidden="true"></a>&nbsp;<a class="fa fa-eye" aria-hidden="true"></a>&nbsp;<a class="fa fa-trash" aria-hidden="true"></a></td>
+
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>  Latest Offers</td>
+                                <td>New batch for Finite Element Methods starts from 5th April, Call 9000123456 for more details.</td>
+                                <td><a class="fa fa-pencil-square-o" aria-hidden="true"></a>&nbsp;<a class="fa fa-eye" aria-hidden="true"></a>&nbsp;<a class="fa fa-trash" aria-hidden="true"></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul class="pagination pull-right">
+                    <li class="disabled"><a href="#">&laquo;</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--
+    #footer
+    ========================== -->
+    <footer id="footer" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="#" method="post" class="subscription-form">
+                        <i class="fa fa-envelope-o fa-lg"></i>
+                        <input type="email" name="subscribe" class="subscribe col-md-10" placeholder="YOUR MAIL" required="">
+                        <input type="submit" value="SUBSCRIBE" id="mail-submit" class="col-md-2">
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <div class="footer-social">
+                        <h3>We are social</h3>
+                        <ul class="text-center list-inline">
+                            <li><a href="http://goo.gl/RqhEjP"><i class="fa fa-facebook fa-lg"></i></a></li>
+                            <li><a href="http://goo.gl/hUfpSB"><i class="fa fa-twitter fa-lg"></i></a></li>
+                            <li><a href="http://goo.gl/r4xzR4"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                            <li><a href="http://goo.gl/k9zAy5"><i class="fa fa-dribbble fa-lg"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-social">
+                        <h4>Ph: 1234567890</h4>
+                        <h4>Ph: 0987654321</h4>
+                        <h4>email: contactelearning@gmail.com</h4>
+                        <h4>Address: Admin 1, road no 1, hyderabad.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--
+    End #footer
+    ========================== -->
+    <!--
+    JavaScripts
+    ========================== -->
+    <!-- main jQuery -->
+    <script src="js/vendor/jquery-1.11.1.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jquery.nav -->
+    <script src="js/jquery.nav.js"></script>
+    <!-- Portfolio Filtering -->
+    <script src="js/jquery.mixitup.min.js"></script>
+    <!-- Fancybox -->
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <!-- Parallax sections -->
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <!-- jQuery Appear -->
+    <script src="js/jquery.appear.js"></script>
+    <!-- countTo -->
+    <script src="js/jquery-countTo.js"></script>
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- WOW script -->
+    <script src="js/wow.min.js"></script>
+    <!-- theme custom scripts -->
+    <script src="js/lightbox/ekko-lightbox.js"></script>
+    <script src="js/jquery.scrollbox.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
