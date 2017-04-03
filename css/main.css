@@ -1232,3 +1232,38 @@ background-color: #ddd !important;
   background-color: #b91773;
   border-color: #fff;
 }
+
+
+/*Scroll to button css*/
+
+#back-to-top {
+           position: fixed;
+           bottom: 0px;
+           right: 40px;
+           z-index: 9999;
+           width: 32px;
+           height: 32px;
+           text-align: center;
+           line-height: 30px;
+           background: #f48024;
+           color: #444;
+           cursor: pointer;
+           border: 0;
+           border-radius: 2px;
+           text-decoration: none;
+           transition: opacity 0.2s ease-out;
+           opacity: 0;
+       }
+
+           #back-to-top:hover {
+               background: #e9ebec;
+           }
+
+           #back-to-top.show {
+               opacity: 1;
+           }
+
+       #content {
+           height: 2000px;
+       }
+/*Scroll to button css*/
