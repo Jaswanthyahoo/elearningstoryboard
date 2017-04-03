@@ -159,7 +159,7 @@
                         <tbody id="myTable">
                             <tr>
                                 <td>1</td>
-                                <td>FEA using ANSYS Classic ( ANSYS APDL Mechanical)</td>
+                                <td><a href="#" data-toggle="tooltip" data-placement="top" title="FEA using ANSYS Classic ( ANSYS APDL Mechanical)!">FEA using ANSYS Classic ( ANSYS APDL Mechanical)</a></td>
                                 <td>Basic FEA Theory</td>
                                 <td>Mechanical  & Civil Engineering</td>
                                 <td>70 hrs</td>
@@ -169,7 +169,7 @@
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>FEA using ANSYS Workbench (Design Modular & Mechanical)</td>
+                                <td><a href="#" data-toggle="tooltip" data-placement="bottom" title="FEA using ANSYS Workbench (Design Modular & Mechanical)">FEA using ANSYS Workbench (Design Modular & Mechanical)</a></td>
                                 <td>Basic FEA Theory</td>
                                 <td>Mechanical  & Civil Engineering</td>
                                 <td>60 hrs</td>
@@ -179,7 +179,7 @@
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>FEA using ANSYS Classic & Workbench</td>
+                                <td><a href="#" data-toggle="tooltip" data-placement="right" title="FEA using ANSYS Classic & Workbench">FEA using ANSYS Classic & Workbench</a></td>
                                 <td>Basic FEA Theory</td>
                                 <td>Mechanical  & Civil Engineering</td>
                                 <td>110 hrs</td>
@@ -188,7 +188,7 @@
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td>Advanced FEA using ANSYS Classic</td>
+                                <td><a href="#" data-toggle="tooltip" data-placement="left" title="Advanced FEA using ANSYS Classic">Advanced FEA using ANSYS Classic</a></td>
                                 <td>Basic FEA Theory</td>
                                 <td>Mechanical  & Civil Engineering</td>
                                 <td>70 hrs</td>
@@ -308,5 +308,11 @@
     <script src="js/wow.min.js"></script>
     <!-- theme custom scripts -->
     <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 </html>
