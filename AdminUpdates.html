@@ -71,13 +71,12 @@
 
         </div>
 
-
         <nav class="navbar" style="margin-bottom: 0px;">
             <div class="collapse navbar-collapse" id="myNavbar" style="background-color: #e16a18;">
                 <ul id="nav" class="nav navbar-nav">
                     <li><a href="admin.html#Dashboard"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span>  Dashboard</a></li>
-                    <li><a href="admin.html#allQuestion"><span><i class="fa fa-question-circle" aria-hidden="true"></i></span>&nbsp;All Questions</a></li>
-
+                    <li><a href="admin.html#viewQuestion"><span><i class="fa fa-eye" aria-hidden="true"></i></span>&nbsp; Question Moderation</a></li>
+                    <li><a href="admin.html#allQuestion"><span><i class="fa fa-question-circle" aria-hidden="true"></i></span>&nbsp; Answer Moderation</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span><i class="fa fa-cogs" aria-hidden="true"></i></span>&nbsp;Admin <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -86,17 +85,10 @@
                             <li><a href="AdminStudentCourseManage.html">Manage Student Courses</a></li>
                             <li><a href="AdminUpdates.html">Manage Updates</a></li>
                         </ul>
-
                     </li>
-                    <li><a href="admin.html#viewquestion"><span><i class="fa fa-eye" aria-hidden="true"></i></span>&nbsp; View your Questions</a></li>
-
-
-
                 </ul>
             </div>
         </nav>
-
-
 
     </header>
     <br />
@@ -112,9 +104,9 @@
             <div class="row">
                 <div class="col-xs-4">
                     <label for="ex2">Updates Type</label><br />
-                    <label class="btn btn-primary"><input type="checkbox" value=""> Courses</label>
-                    <label class="btn btn-info"><input type="checkbox" value="">Latest Offers</label>
-                    <label class="btn btn-success"><input type="checkbox" value=""> Latest Events</label>
+                    <label class="btn btn-primary"><input type="radio" name="rdeventtype" value=""> Courses</label>
+                    <label class="btn btn-info"><input type="radio" name="rdeventtype" value="">Latest Offers</label>
+                    <label class="btn btn-success"><input type="radio" name="rdeventtype" value=""> Latest Events</label>
 
                 </div>
                 <div class="col-xs-4">

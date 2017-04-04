@@ -53,7 +53,7 @@
             var chart = new CanvasJS.Chart("chartContainer",
             {
                 title: {
-                    text: "How many Pending/Answered Questions?",
+                    text: "Pending Question & Answers for Moderation",
                     fontFamily: "arial black"
                 },
                 animationEnabled: true,
@@ -76,8 +76,8 @@
                     showInLegend: true,
                     indexLabel: "#percent%",
                     dataPoints: [
-                        { y: 52, name: "Pending Questions", legendMarkerType: "triangle" },
-                        { y: 44, name: "Answered Questions", legendMarkerType: "square" },
+                        { y: 52, name: "Pending", legendMarkerType: "triangle" },
+                        { y: 44, name: "Answered", legendMarkerType: "square" },
 
                     ]
                 }
@@ -106,19 +106,15 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand current" href="index.html">ARTEM</a>
-
             </div>
-          
-
         </div>
-
 
         <nav class="navbar" style="margin-bottom: 0px;">
             <div class="collapse navbar-collapse" id="myNavbar" style="background-color: #e16a18;">
                 <ul id="nav" class="nav navbar-nav">
                     <li><a href="admin.html#Dashboard"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span>  Dashboard</a></li>
-                    <li><a href="admin.html#allQuestion"><span><i class="fa fa-question-circle" aria-hidden="true"></i></span>&nbsp;All Questions</a></li>
-
+                    <li><a href="admin.html#viewQuestion"><span><i class="fa fa-eye" aria-hidden="true"></i></span>&nbsp; Question Moderation</a></li>
+                    <li><a href="admin.html#allQuestion"><span><i class="fa fa-question-circle" aria-hidden="true"></i></span>&nbsp; Answer Moderation</a></li>                    
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span><i class="fa fa-cogs" aria-hidden="true"></i></span>&nbsp;Admin <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -126,19 +122,11 @@
                             <li><a href="AdminManageSubjects.html">Manage Subjects</a></li>
                             <li><a href="AdminStudentCourseManage.html">Manage Student Courses</a></li>
                             <li><a href="AdminUpdates.html">Manage Updates</a></li>
-
                         </ul>
-
-                    </li>
-                    <li><a href="admin.html#viewQuestion"><span><i class="fa fa-eye" aria-hidden="true"></i></span>&nbsp; View your Questions</a></li>
-                   
-
-
+                    </li> 
                 </ul>
             </div>
         </nav>
-
-
 
     </header>
     <!--
@@ -158,7 +146,7 @@
     <section id="viewQuestion">
         <div class="container">
             <div class="section-title text-center wow fadeInUp">
-                <h2>View Pending Questions</h2>
+                <h2>Pending Questions for Moderation</h2>
             </div>
             <div class="container">
                 <div class="row">
@@ -176,61 +164,61 @@
                                 <tr>
                                     <td>1</td>
                                     <td>What is Electronic?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>What is communication?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>Different types of communications? Explain.</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>4</td>
                                     <td>What is sampling?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>5</td>
                                     <td>State sampling theorem?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>6</td>
                                     <td>Name the modulation techniques.?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>7</td>
                                     <td>How many satellites are required to cover the earth?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>8</td>
                                     <td>Example for negative feedback and positive feedback?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>9</td>
                                     <td>What is an Integrated Circuit?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>10</td>
                                     <td>What is CDMA, TDMA, FDMA?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                             </tbody>
@@ -255,7 +243,7 @@
     <section id="allQuestion">
         <div class="container">
             <div class="section-title text-center wow fadeInUp">
-                <h2>View All Questions</h2>
+                <h2>Pending Answers for Moderation</h2>
             </div>
             <div class="container">
                 <div class="row">
@@ -273,61 +261,61 @@
                                 <tr>
                                     <td>1</td>
                                     <td>What is Electronic?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>2</td>
                                     <td>What is communication?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>3</td>
                                     <td>Different types of communications? Explain.</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>4</td>
                                     <td>What is sampling?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>5</td>
                                     <td>State sampling theorem?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>6</td>
                                     <td>Name the modulation techniques.?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>7</td>
                                     <td>How many satellites are required to cover the earth?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>8</td>
                                     <td>Example for negative feedback and positive feedback?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>9</td>
                                     <td>What is an Integrated Circuit?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                                 <tr>
                                     <td>10</td>
                                     <td>What is CDMA, TDMA, FDMA?</td>
-                                    <td><a href="#">Give Answer</a></td>
+                                    <td><a href="#">View</a></td>
 
                                 </tr>
                             </tbody>
