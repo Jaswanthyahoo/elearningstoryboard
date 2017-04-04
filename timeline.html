@@ -36,7 +36,6 @@
     <header>
         <h1>
             What are the benefits of Differential Equations
-
         </h1>
     </header>
 
@@ -120,30 +119,61 @@
         </div> <!-- cd-timeline-block -->
         <!-- cd-timeline-block -->
 
+        <div class="cd-timeline-block">
+            <div class="cd-timeline-img cd-movie">
+                <img src="img/icons/camera.png" alt="Movie">
+            </div> <!-- cd-timeline-img -->
+
+            <div class="cd-timeline-content">
+                <h2 class="marginbottom10">Answer the Question</h2>
+                <textarea id="txtpostanswer" name="txtpostanswer" placeholder="Post Answer" class="form-control input-md marginbottom10" rows="10" cols="40"></textarea>
+                <script type="text/javascript">
+                    CKEDITOR.replace('txtpostanswer');
+                </script>
+                <input type="button" value="Submit Answer" class="btn btn-primary pull-right" id="btnPostAnswer" onclick="searchQuestionsResults.submitAnswer();" />
+                <div class="col-md-10">
+                    <span><i class="fa fa-paperclip" aria-hidden="true"></i> <input class="form-control" id="ex2" type="file"></span>
+                </div>
+                <span class="cd-date">Feb 26</span>
+            </div> <!-- cd-timeline-content -->
+        </div> <!-- cd-timeline-block -->
+        <!-- cd-timeline-block -->
+
     </section> <!-- cd-timeline -->
 
 
-    <footer id="footer">
+    <footer id="footer" class="text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="col-md-10">
-                        <textarea id="txtpostanswer" name="txtpostanswer" placeholder="Post Answer" class="form-control input-md" rows="10" cols="80"></textarea>
-                        <script type="text/javascript">
-                            CKEDITOR.replace('txtpostanswer');
-                        </script>
-                    </div>
-                    <div class="col-md-2">
-                        <input type="button" value="Submit Answer" class="btn btn-primary pull-right" id="btnPostAnswer" onclick="searchQuestionsResults.submitAnswer();" />
-                    </div>
+                    <form action="#" method="post" class="subscription-form">
+                        <i class="fa fa-envelope-o fa-lg"></i>
+                        <input type="email" name="subscribe" class="subscribe col-md-10" placeholder="YOUR MAIL" required="">
+                        <input type="submit" value="SUBSCRIBE" id="mail-submit" class="col-md-2">
+                    </form>
                 </div>
             </div>
             <div class="row">
-             
-                <div class="col-md-10">
-     
-                   <span><i class="fa fa-paperclip" aria-hidden="true"></i></span> <input class="form-control" id="ex2" type="file">
-                   
+                <div class="col-lg-6">
+
+                    <div class="footer-social">
+                        <h3>We are social</h3>
+                        <ul class="text-center list-inline">
+                            <li><a href="http://goo.gl/RqhEjP"><i class="fa fa-facebook fa-lg"></i></a></li>
+                            <li><a href="http://goo.gl/hUfpSB"><i class="fa fa-twitter fa-lg"></i></a></li>
+                            <li><a href="http://goo.gl/r4xzR4"><i class="fa fa-google-plus fa-lg"></i></a></li>
+                            <li><a href="http://goo.gl/k9zAy5"><i class="fa fa-dribbble fa-lg"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-social">
+                        <h4>Ph: 1234567890</h4>
+                        <h4>Ph: 0987654321</h4>
+                        <h4>email: contactelearning@gmail.com</h4>
+                        <h4>Address: Admin 1, road no 1, hyderabad.</h4>
+                    </div>
                 </div>
             </div>
         </div>
