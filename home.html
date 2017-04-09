@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/main.css">
-  
+
     <!-- Main Responsive -->
     <link rel="stylesheet" href="css/responsive.css">
 
@@ -96,7 +96,7 @@
     <!--
     Fixed Navigation
     ==================================== -->
-    
+
     <header id="navigation" class="navbar-fixed-top">
         <!-- main nav -->
 
@@ -110,8 +110,14 @@
                 <a class="navbar-brand current" href="index.html">ARTEM</a>
 
             </div>
-           <span><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
 
+            <div class="pull-right" style="margin-top:1%">
+                <img src="img/sc1.jpg" class="img-rounded" alt="Cinque Terre" width="40" height="40">
+                <span class="text-success">
+                    Nikola Telasa
+                </span>
+                <a href="#" class="btn btn-primary"> <span><i class="fa fa-sign-out" aria-hidden="true"></i></span>sign-out </a>
+            </div>
         </div>
 
 
@@ -120,7 +126,7 @@
                 <ul id="nav" class="nav navbar-nav">
                     <li class="current"><a href="#Dashboard"><span><i class="fa fa-tachometer" aria-hidden="true"></i></span>  Dashboard</a></li>
                     <li><a href="#postquestion"><span><i class="fa fa-question-circle" aria-hidden="true"></i></span>&nbsp;Post Question</a></li>
-                
+
                     <!--<li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span><i class="fa fa-cogs" aria-hidden="true"></i></span>&nbsp;Services <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -132,7 +138,7 @@
                     </li>-->
                     <li><a href="#viewquestion"><span><i class="fa fa-eye" aria-hidden="true"></i></span>&nbsp; View your Questions</a></li>
                     <li><a href="courses.html"><span><i class="fa fa-book" aria-hidden="true"></i></span>&nbsp; Course Catalog</a></li>
-                  
+
 
                 </ul>
             </div>
@@ -219,88 +225,86 @@
                     <a href="searchquestions.html" class="btn btn-primary">Answer Questions? Click Here</a>
                 </div>
                 <div class="clear"></div>
-                    <div class="row">
-                        <div class="table-responsive">
-                            <table class="table tabAmc table-striped table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>#Q NO</th>
-                                        <th>Question</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="myTable">
-                                    <tr>
-                                        <td>1</td>
-                                        <td>What is Electronic?</td>
-                                        <td><a href="timeline.html" class="cursor-pointer">View</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>What is communication?</td>
-                                        <td><a href="timeline.html" class="cursor-pointer">View</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Different types of communications? Explain.</td>
-                                        <td><a href="timeline.html" class="cursor-pointer">View</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>What is sampling?</td>
-                                        <td><a href="timeline.html" class="cursor-pointer">View</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>State sampling theorem?</td>
-                                        <td><a href="timeline.html" class="cursor-pointer">View</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Name the modulation techniques.?</td>
-                                        <td><a href="timeline.html" class="cursor-pointer">View</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td>How many satellites are required to cover the earth?</td>
-                                        <td><a href="timeline.html" class="cursor-pointer">View</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Example for negative feedback and positive feedback?</td>
-                                        <td><a href="timeline.html" class="cursor-pointer">View</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>9</td>
-                                        <td>What is an Integrated Circuit?</td>
-                                        <td><a href="timeline.html" class="cursor-pointer">View</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>10</td>
-                                        <td>What is CDMA, TDMA, FDMA?</td>
-                                        <td><a href="timeline.html" class="cursor-pointer">View</a></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <ul class="pagination pull-right">
-                            <li class="disabled"><a href="#">&laquo;</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>
-                        </ul>
+                <div class="row">
+                    <div class="table-responsive">
+                        <table class="table tabAmc table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#Q NO</th>
+                                    <th>Question</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="myTable">
+                                <tr>
+                                    <td>1</td>
+                                    <td>What is Electronic?</td>
+                                    <td><a href="timeline.html" class="cursor-pointer">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>What is communication?</td>
+                                    <td><a href="timeline.html" class="cursor-pointer">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Different types of communications? Explain.</td>
+                                    <td><a href="timeline.html" class="cursor-pointer">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>What is sampling?</td>
+                                    <td><a href="timeline.html" class="cursor-pointer">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>State sampling theorem?</td>
+                                    <td><a href="timeline.html" class="cursor-pointer">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Name the modulation techniques.?</td>
+                                    <td><a href="timeline.html" class="cursor-pointer">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>How many satellites are required to cover the earth?</td>
+                                    <td><a href="timeline.html" class="cursor-pointer">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Example for negative feedback and positive feedback?</td>
+                                    <td><a href="timeline.html" class="cursor-pointer">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>What is an Integrated Circuit?</td>
+                                    <td><a href="timeline.html" class="cursor-pointer">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>What is CDMA, TDMA, FDMA?</td>
+                                    <td><a href="timeline.html" class="cursor-pointer">View</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+                    <ul class="pagination pull-right">
+                        <li class="disabled"><a href="#">&laquo;</a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
                 </div>
+            </div>
         </div>
     </section>
 
     <!--Start Modals-->
-    
     <!--End Modals-->
-
     <!--
     #footer
     ========================== -->
