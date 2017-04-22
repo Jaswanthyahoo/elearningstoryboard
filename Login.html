@@ -76,8 +76,149 @@
             alert("s");
             ShowMessage("Aww, password is wrong", MessageType.Error);
         });
+        var modal = document.getElementById('id01');
 
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
     </script>
+    <style type="text/css">
+
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    /* Set a style for all buttons */
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+
+    /* Center the image and position the close button */
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+    }
+
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button (x) */
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+        .close:hover,
+        .close:focus {
+            color: red;
+            cursor: pointer;
+        }
+
+    /* Add Zoom Animation */
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s;
+    }
+
+    @-webkit-keyframes animatezoom {
+        from {
+            -webkit-transform: scale(0);
+        }
+
+        to {
+            -webkit-transform: scale(1);
+        }
+    }
+
+    @keyframes animatezoom {
+        from {
+            transform: scale(0);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+
+        .cancelbtn {
+            width: 100%;
+        }
+    }
+
+
+    </style>
 </head>
 
 <body>
@@ -98,8 +239,8 @@
 
 
             </div>
-            <button type="button" style="margin-top: 10px;" data-toggle="modal" data-target="#SignupSigninModel" class="btn btn-primary pull-right"><span><i class="fa fa-sign-in" aria-hidden="true"></i></span>&nbsp;Log-In</button>
-
+            <!--<button type="button" style="margin-top: 10px;" data-toggle="modal" data-target="#SignupSigninModel" class="btn btn-primary pull-right"><span><i class="fa fa-sign-in" aria-hidden="true"></i></span>&nbsp;Log-In</button>-->
+            <button style="margin-top: 10px;" onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary pull-right"><span><i class="fa fa-sign-in" aria-hidden="true"></i></span>&nbsp;Log-In</button>
 
         </div>
 
@@ -135,102 +276,31 @@
     End Fixed Navigation
     ==================================== -->
 
-    <section id="allCourses">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="panel panel-primary">
-                       
-                        <div class="subtitle text-center">
-                            <h3>Log-In</h3>
-                        </div>
-                        <div>
-                            <div class="form-group">
-                                <label for="loginname">Login email:</label>
-                                <div>
-                                    <input id="txtloginname" name="txtloginname" type="text" placeholder="Login Email" class="form-control input-md" required="">
+    <div id="id01" class="modal">
 
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="loginpwd">Password:</label>
-                                <div>
-                                    <input id="txtloginpwd" name="txtloginpwd" type="password" placeholder="Password" class="form-control input-md" required="">
-
-                                </div>
-                            </div>
-                            <div class="form-group">
-
-                                <div class="center">
-                                    <input id="btnlogin" name="btnlogin" type="button" value="Login" class="btn btn-primary form-control"><br /><br />
-                                    <a href="#" id="Register" class="pull-left"><strong> New? Register here</strong></a>
-                                    <a href="#" id="fpwd" class="pull-right"><strong>Forgot Password?</strong></a>
-                                </div>
-                            </div>
-
-                        </div>
-                        
-
-                    </div>
-                </div>
-
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="img_avatar2.png" alt="Avatar" class="avatar">
             </div>
 
-        </div>
+            <div class="container">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
 
-        <br />
-        
-        
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
 
-    </section>
-
-
-    <!--
-    #footer
-    ========================== -->
-    <footer id="footer" class="text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <form action="#" method="post" class="subscription-form">
-                        <i class="fa fa-envelope-o fa-lg"></i>
-                        <input type="email" name="subscribe" class="subscribe col-md-10" placeholder="YOUR MAIL" required="">
-                        <input type="submit" value="SUBSCRIBE" id="mail-submit" class="col-md-2">
-                    </form>
-                </div>
+                <button type="submit">Login</button>
+                <input type="checkbox" checked="checked"> Remember me
             </div>
-            <div class="row">
-                <div class="col-lg-6">
 
-                    <div class="footer-social">
-                        <h3>We are social</h3>
-                        <ul class="text-center list-inline">
-                            <li><a href="http://goo.gl/RqhEjP"><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href="http://goo.gl/hUfpSB"><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href="http://goo.gl/r4xzR4"><i class="fa fa-google-plus fa-lg"></i></a></li>
-                            <li><a href="http://goo.gl/k9zAy5"><i class="fa fa-dribbble fa-lg"></i></a></li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="col-lg-6">
-                    <div class="footer-social">
-                        <h4>Ph: 1234567890</h4>
-                        <h4>Ph: 0987654321</h4>
-                        <h4>email: contactelearning@gmail.com</h4>
-                        <h4>Address: Admin 1, road no 1, hyderabad.</h4>
-                    </div>
-                </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
-        </div>
-    </footer>
-    <!--
-    End #footer
-    ========================== -->
-
-
-    <!-- set up the modal to start hidden and fade in and out -->
-   
+        </form>
+    </div>
 
 </body>
 </html>
